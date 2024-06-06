@@ -6,6 +6,23 @@ import { generateRss } from '@/lib/rss'
 import { getLayoutByTheme } from '@/themes/theme'
 import { useRouter } from 'next/router'
 
+
+
+// 配置百度
+import Head from 'next/head'
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <meta name="baidu-site-verification" content="codeva-kKgOJxffN2" />
+      </Head>
+      {/* 其他页面内容 */}
+    </>
+  )
+}
+//  代码不一定正确
+
 /**
  * 首页布局
  * @param {*} props
@@ -79,19 +96,6 @@ export async function getStaticProps(req) {
 
 
 
-// 配置百度
-import Head from 'next/head'
-
-export default function Home() {
-  return (
-    <>
-      <Head>
-        <meta name="baidu-site-verification" content="codeva-kKgOJxffN2" />
-      </Head>
-      {/* 其他页面内容 */}
-    </>
-  )
-}
 
 
 
