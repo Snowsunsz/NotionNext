@@ -77,4 +77,22 @@ export async function getStaticProps(req) {
   }
 }
 
+
+
+// 配置百度
+import Head from 'next/head'
+
+export default function Home() {
+  return (
+    <>
+      <Head>
+        <meta name="baidu-site-verification" content="codeva-kKgOJxffN2" />
+      </Head>
+      {/* 其他页面内容 */}
+    </>
+  )
+}
+
+
+
 export default Index
