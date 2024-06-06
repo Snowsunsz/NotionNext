@@ -18,6 +18,34 @@ import BLOG from '@/blog.config'
 import ExternalPlugins from '@/components/ExternalPlugins'
 import GlobalHead from '@/components/GlobalHead'
 
+
+//
+//
+//测试 不置可否
+import React from 'react';  
+import App from 'next/app';  
+import Head from 'next/head';  
+  
+class MyApp extends App {  
+  render() {  
+    const { Component, pageProps } = this.props;  
+  
+    return (  
+      <>  
+        <Head>  
+          <meta name="baidu-site-verification" content="codeva-kKgOJxffN2" />  
+        </Head>  
+        <Component {...pageProps} />  
+      </>  
+    );  
+  }  
+}  
+//
+//
+//
+//
+//
+
 /**
  * App挂载DOM 入口文件
  * @param {*} param0
